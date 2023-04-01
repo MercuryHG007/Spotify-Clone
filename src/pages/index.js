@@ -1,6 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import styles from '@/styles/Home.module.css'
+import Sidebar from '../../components/Sidebar'
 
 
 export default function Home() {
@@ -12,13 +11,22 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="spotify3.png" />
       </Head>
-      <main
-        className='h-[100vh] w-[100vw] flex justify-center items-center'
+      <div
+        className='bg-black h-screen overflow-hidden'
       >
-        <p className='text-6xl text-orange-500 p-7'>
-          Mercurify
-        </p>
-      </main>
+        <main
+          className=''
+        >
+          {/* SIDEBAR */}
+          <Sidebar />
+
+          {/* CENTER */}
+        </main>
+        <div>
+          {/* PLAYER */}
+
+        </div>
+      </div>
     </>
   )
 }
